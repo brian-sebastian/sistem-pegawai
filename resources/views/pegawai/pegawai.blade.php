@@ -10,14 +10,34 @@
     <!-- Table Start -->
     <div class="container-fluid pt-4 px-4">
         <div class="row g-4">
-            <div class="col-12">
-                <div class="bg-light rounded h-100 p-4">
+            <div class="col-lg-12">
+                <div class="col-md-2">
                     <h6 class="mb-4">{{ $title }}</h6>
-                    <div col="2">
-                        <a class="btn btn-primary btn-sm mb-2" href="{{ url('/pegawai/create') }}"><i
-                                class="fas fa-solid fa-plus me-2"></i>
-                            Tambah</a>
+                    <a class="btn btn-primary btn-sm mb-2" href="{{ url('/pegawai/create') }}"><i
+                            class="fas fa-solid fa-plus me-2"></i>
+                        Tambah</a>
+                </div>
+
+                <div class="bg-light rounded h-100 p-4">
+                    <div col="col-md-12">
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <form action="" method="get">
+                                    <div class="row">
+                                        <h6 class="mb-4">Tanggal Lahir</h6>
+                                        <div class="col-sm-5">
+                                            <input type="text" name="tanggal_lahir" class="form-control form-control-sm"
+                                                id="daterangepicker">
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                            <button type="submit" class="btn btn-info btn-sm">Cari</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="table-responsive">
                         <table class="table display responsive nowrap" id="datatables">
                             <thead>

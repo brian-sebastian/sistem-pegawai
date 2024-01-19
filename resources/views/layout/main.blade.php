@@ -33,7 +33,7 @@
     <link href="{{ asset('') }}lib/datatables/datatables.min.css" rel="stylesheet">
     <link href="{{ asset('lib/select2/select2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/daterangepicker/daterangepicker.css') }}" rel="stylesheet">
-    <link href="{{ asset('lib/datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('') }}lib/jqueryui/jquery-ui.css" rel="stylesheet">
     <link href="{{ asset('lib/kartik-v-bootstrap-fileinput-9022178/css/fileinput.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/dropzone/dropzone.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/fontawesome-free-6.5.1-web/css/all.min.css') }}">
@@ -68,7 +68,7 @@
     <script src="{{ asset('') }}lib/datatables/datatables.min.js"></script>
     <script src="{{ asset('') }}lib/select2/select2.min.js"></script>
     <script src="{{ asset('') }}lib/daterangepicker/moment.min.js"></script>
-    <script src="{{ asset('lib/datepicker/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ asset('') }}lib/jqueryui/jquery-ui.js"></script>
     <script src="{{ asset('') }}lib/kartik-v-bootstrap-fileinput-9022178/js/fileinput.min.js"></script>
     <script src="{{ asset('') }}lib/daterangepicker/daterangepicker.min.js"></script>
     <script src="{{ asset('lib/dropzone/dropzone.min.js') }}"></script>

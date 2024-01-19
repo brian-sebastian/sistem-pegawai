@@ -69,10 +69,29 @@
     $('#select2').select2()
 
     // Daterangepicker
-    $('#daterangepicker').daterangepicker()
+    $('#daterangepicker').daterangepicker({
+        opens: 'left',
+        showDropdowns: true,
+        autoApply: true,
+        autoUpdateInput: false,
+        singleDatePicker: false,
+        locale: {
+            format: 'YYYY-MM-DD'
+          }
+      
+      })
+      $('#daterangepicker').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('YYYY-MM-DD') + ' to ' + picker.endDate.format('YYYY-MM-DD'));
+      });
 
+      
     // Datepicker
-    $('#datepicker').datepicker()
+    $('#datepicker').datepicker({
+        dateFormat: "yy-mm-dd",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "c-300:c+20"
+    })
 
     // File input js
     $("#fileinput").fileinput();

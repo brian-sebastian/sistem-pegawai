@@ -10,10 +10,25 @@ class PegawaiController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+
+        $tanggalLahir =  $request->tanggal_lahir;
+        $pecah = explode('to', $tanggalLahir);
+
+        if ($pecah[0] != '') {
+            $pegawais = Pegawai::query()->whereBetween('tanggal_lahir', [$pecah[0], $pecah[1]])->get();
+            if ($pegawais != null) {
+                $pegawai = $pegawais;
+            }
+        } else {
+            $pegawai = Pegawai::all();
+        }
+
+
+
         $data['title'] = 'Table Pegawai';
-        $data['pegawai'] = Pegawai::all();
+        $data['pegawai'] = $pegawai;
         return view('pegawai.pegawai', $data);
     }
 

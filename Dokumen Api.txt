@@ -1,0 +1,13 @@
+Link : https://documenter.getpostman.com/view/22541173/2s9YsT68Hm
+Untuk mencoba tes api menggunakan apk postman atau sejenisnya
+
+Tutotorial :
+
+1. ubah url : http://192.168.100.31:8000/api/pegawai
+
+2. menjadi url : http://sesuaikan ip atau ip local ketika menjalankan laravel/api/pegawai
+
+3. run
+
+
+Data Dummy Seeder Sudah Tersedia
